@@ -122,3 +122,31 @@ Output: false
 
 Since the process enters a cycle that does not include `1`, **2 is not a happy number**.
 
+# Exercise 6 — Longest Common Prefix
+
+Write a function to find the **longest common prefix** string among an array of strings.
+
+If there is no common prefix, return an empty string `""`.
+
+## Example 1
+
+```text
+Input: strs = ["flower", "flow", "flight"]
+Output: "fl"
+```
+
+### Explanation
+
+The longest prefix shared by all three strings is `"fl"`.
+
+## Example 2
+
+```text
+Input: strs = ["dog", "racecar", "car"]
+Output: ""
+```
+
+### Explanation
+
+There is no common prefix among the input strings, so the result is an empty string `""`.
+

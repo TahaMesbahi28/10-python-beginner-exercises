@@ -1,4 +1,4 @@
-## About This Project[Farsi](READMEF.md)
+## About This Project    [Farsi](READMEF.md)
 
 These exercises are designed to help Python beginners, including myself, strengthen their understanding of Python fundamentals, practice what they learn, and build a solid foundation for becoming more skilled and confident in Python.
 
@@ -8,7 +8,7 @@ These exercises represent my own approach to solving the problems. Other solutio
 
 ## Examples Source
 
-# Source of the examples and exercises
+# Source of the exercises
 
 * [BackendBaz](https://backendbaz.ir)
 

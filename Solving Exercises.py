@@ -87,3 +87,17 @@ while True:
     N.append(s)
 # -------------------------------------------------------------------------------------------------------
 # Exercise 6
+words = input("Enter words separated by space: ").split()
+
+letters = []
+
+for i in range(min(len(word) for word in words)):
+    if all(word[i] == words[0][i] for word in words):
+        letters.append(words[0][i])
+    else:
+        break
+
+for letter in letters:
+    print(letter, end="")
+# -------------------------------------------------------------------------------------------------------
+# Exercise 6
