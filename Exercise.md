@@ -150,3 +150,32 @@ Output: ""
 
 There is no common prefix among the input strings, so the result is an empty string `""`.
 
+# Exercise 7 — String Compression
+
+Write a function that takes a string as input and places the **number of consecutive occurrences of each character** next to it.
+
+Only characters that appear **consecutively** should be grouped together. If the same character appears again later in the string, it should be counted separately.
+
+## Example 1
+
+```text
+Input: "aaabbccccd"
+Output: "a3b2c4d1"
+```
+
+## Example 2
+
+```text
+Input: "xxxyzz"
+Output: "x3y1z2"
+```
+
+## Example 3
+
+```text
+Input: "aabcca"
+Output: "a2b1c2a1"
+```
+
+In the third example, the two `a` characters at the beginning and end are not combined because they do not appear consecutively.
+

@@ -87,17 +87,37 @@ while True:
     N.append(s)
 # -------------------------------------------------------------------------------------------------------
 # Exercise 6
+def longest_common_prefix(words):
+    letters = []
+
+    for i in range(min(len(word) for word in words)):
+        if all(word[i] == words[0][i] for word in words):
+            letters.append(words[0][i])
+        else:
+            break
+
+    return "".join(letters)
+
+
 words = input("Enter words separated by space: ").split()
 
-letters = []
-
-for i in range(min(len(word) for word in words)):
-    if all(word[i] == words[0][i] for word in words):
-        letters.append(words[0][i])
-    else:
-        break
-
-for letter in letters:
-    print(letter, end="")
+print(longest_common_prefix(words))
 # -------------------------------------------------------------------------------------------------------
-# Exercise 6
+# Exercise 7
+def compression():
+    word = input("Enter a word: ")
+    count = 1
+
+    for i in range(len(word) - 1):
+        if word[i] == word[i + 1]:
+            count += 1
+        else:
+            print(word[i], count, sep="", end="")
+            count = 1
+    else:
+        print(word[-1], count, sep="", end="")
+
+
+compression()
+# -------------------------------------------------------------------------------------------------------
+# Exercise 8
