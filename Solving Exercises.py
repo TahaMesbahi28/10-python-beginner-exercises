@@ -121,3 +121,18 @@ def compression():
 compression()
 # -------------------------------------------------------------------------------------------------------
 # Exercise 8
+def decimal_to_binary():
+    number = int(input("Enter a number: "))
+    binary_digits = []
+
+    while number != 0:
+        binary_digits.append(number % 2)
+        number //= 2
+
+    for i in range(len(binary_digits)):
+        print(binary_digits[len(binary_digits) - 1 - i], end="")
+
+
+decimal_to_binary()
+# -------------------------------------------------------------------------------------------------------
+# Exercise 9

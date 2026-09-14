@@ -179,3 +179,23 @@ Output: "a2b1c2a1"
 
 In the third example, the two `a` characters at the beginning and end are not combined because they do not appear consecutively.
 
+# Exercise 8 — Decimal to Binary
+
+Write a program that takes a **positive integer** as input and finds its binary representation **without using the `bin()` function**.
+
+## Example 1
+
+```text
+Input: 10
+Output: "1010"
+```
+
+## Example 2
+
+```text
+Input: 7
+Output: "111"
+```
+
+> **Note:** Using the `bin()` function is not allowed in this exercise.
+
