@@ -157,3 +157,23 @@ for char in text:
 print("Encrypted text:", result)
 # -------------------------------------------------------------------------------------------------------
 # Exercise 10
+password = input("Enter password: ")
+
+if len(password) < 8:
+    strength = "Weak"
+else:
+    has_lower = any(char.islower() for char in password)
+    has_upper = any(char.isupper() for char in password)
+    has_digit = any(char.isdigit() for char in password)
+    has_special = any(not char.isalnum() for char in password)
+
+    if has_lower and has_upper and has_digit and has_special:
+        strength = "Strong"
+    else:
+        strength = "Medium"
+
+print(f"Password strength: {strength}")
+# -------------------------------------------------------------------------------------------------------
+# Your feedback and suggestions are valuable! ❤️
+
+# If you have any ideas for improving this exercise or suggestions for future exercises, I’d be happy to hear them. Feel free to share them with me!

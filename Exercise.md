@@ -269,3 +269,72 @@ shift = 2
 ## Hint
 
 You can use Python's `ord()` and `chr()` functions to convert between characters and their numerical codes. The modulo operator (`%`) can help handle shifts that go beyond the end of the alphabet.
+
+# Exercise 10 — Password Strength Checker
+
+## Problem Description
+
+Write a Python program that receives a password from the user and determines its strength as **Weak, Medium, or Strong** based on the specified criteria.
+
+## Evaluation Rules
+
+1. If the password contains fewer than 8 characters, it is considered **Weak**.
+
+2. If the password contains at least 8 characters, check whether it includes the following:
+
+   - At least one lowercase English letter
+   - At least one uppercase English letter
+   - At least one digit
+   - At least one special character, such as `!`, `@`, or `#`
+
+3. If the password contains at least 8 characters but does not meet all the criteria above, it is considered **Medium**.
+
+4. If the password contains at least 8 characters and meets all the criteria above, it is considered **Strong**.
+
+## Examples
+
+### Example 1
+
+**Input:**
+```text
+Enter password: abc
+```
+
+**Output:**
+```text
+Password strength: Weak
+```
+
+### Example 2
+
+**Input:**
+```text
+Enter password: hello123
+```
+
+**Output:**
+```text
+Password strength: Medium
+```
+
+### Example 3
+
+**Input:**
+```text
+Enter password: Hello123!
+```
+
+**Output:**
+```text
+Password strength: Strong
+```
+
+## Restrictions
+
+- Do not use external libraries.
+- Use Python's built-in features to check password characters.
+- You may use string methods such as `islower()`, `isupper()`, and `isdigit()`.
+
+**Your feedback and suggestions are valuable!** ❤️
+
+If you have any ideas for improving this exercise or suggestions for future exercises, I’d be happy to hear them. Feel free to share them with me!

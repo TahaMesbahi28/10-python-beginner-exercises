@@ -8,8 +8,6 @@ These exercises represent my own approach to solving the problems. Other solutio
 
 ## Examples Source
 
-# Source of the exercises
-
 * [BackendBaz](https://backendbaz.ir)
 
 * [sabzlearn](https://sabzlearn.ir/)
