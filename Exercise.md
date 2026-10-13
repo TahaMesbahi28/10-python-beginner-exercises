@@ -199,3 +199,73 @@ Output: "111"
 
 > **Note:** Using the `bin()` function is not allowed in this exercise.
 
+# Exercise 9 — Caesar Cipher
+
+Write a Python program that receives a text and an integer named `shift` from the user, then encrypts the text using the **Caesar cipher**.
+
+In this method, each English letter is shifted forward by a specified number of positions in the alphabet.
+
+For example, if `shift = 3`:
+
+- The letter `A` becomes `D`.
+- The letter `B` becomes `E`.
+- The letter `X` becomes `A`.
+- The letter `Y` becomes `B`.
+- The letter `Z` becomes `C`.
+
+## Example 1
+
+**Input:**
+
+```text
+text = "ABC"
+shift = 3
+```
+
+**Output:**
+
+```text
+"DEF"
+```
+
+## Example 2
+
+**Input:**
+
+```text
+text = "XYZ"
+shift = 3
+```
+
+**Output:**
+
+```text
+"ABC"
+```
+
+## Example 3
+
+**Input:**
+
+```text
+text = "Hello, World!"
+shift = 2
+```
+
+**Output:**
+
+```text
+"Jgnnq, Yqtnf!"
+```
+
+## Requirements and Constraints
+
+- Uppercase letters must remain uppercase after encryption.
+- Lowercase letters must remain lowercase after encryption.
+- Spaces, numbers, and punctuation marks must remain unchanged.
+- The `shift` value can be greater than `26`.
+- Ready-made encryption libraries are not allowed.
+
+## Hint
+
+You can use Python's `ord()` and `chr()` functions to convert between characters and their numerical codes. The modulo operator (`%`) can help handle shifts that go beyond the end of the alphabet.
